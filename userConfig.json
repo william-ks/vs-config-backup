@@ -2,6 +2,8 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.colorTheme": "Min Dark",
   "workbench.iconTheme": "symbols",
+  // "editor.mouseWheelScrollSensitivity": 3,
+
   "workbench.editor.labelFormat": "default",
   // "editor.fontFamily": "Fira Code",
   "editor.fontFamily": "JetBrains Mono",
@@ -9,10 +11,7 @@
   "terminal.integrated.fontSize": 14,
   "editor.fontSize": 14,
   "editor.lineHeight": 1.8,
-  "editor.rulers": [
-    100,
-    120
-  ],
+  "editor.rulers": [100, 120],
   "files.autoSave": "afterDelay",
   "editor.guides.bracketPairs": true,
   "editor.tabSize": 2,
@@ -43,15 +42,9 @@
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "tailwindCSS.classAttributes": [
-    "class",
-    "ui"
-  ],
+  "tailwindCSS.classAttributes": ["class", "ui"],
   "tailwindCSS.experimental.classRegex": [
-    [
-      "ui:\\s*{([^)]*)\\s*}",
-      "(?:'|\"|`)([^']*)(?:'|\"|`)"
-    ]
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
@@ -93,6 +86,7 @@
     "model": "folder-models",
     "composables": "folder-drizzle",
     "component": "folder-green-code",
+    "_components": "folder-green-code",
     "providers": "folder-providers",
     "repositories": "folder-database",
     "repository": "folder-database",
@@ -102,9 +96,34 @@
     "routes": "folder-router",
     "pages": "folder-app",
     "test": "folder-utils",
-    "tests": "folder-utils"
+    "tests": "folder-utils",
+    "functions": "folder-pink-code"
   },
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  }
 }
